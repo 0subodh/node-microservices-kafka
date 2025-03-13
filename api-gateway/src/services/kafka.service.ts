@@ -6,7 +6,7 @@ dotenv.config();
 
 const kafka = new Kafka({
   clientId: "api-gateway",
-  brokers: [process.env.KAFKA_BROKERS || "localhost:9092"],
+  brokers: [process.env.KAFKA_BROKERS || "kafka:9092"],
 });
 
 const producer: Producer = kafka.producer();

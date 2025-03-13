@@ -1,6 +1,6 @@
 import { Kafka, Consumer, EachMessagePayload } from "kafkajs";
 import dotenv from "dotenv";
-import { processMessage } from "./services/kafka.service";
+import { processMessage } from "./services/message.service";
 
 dotenv.config();
 

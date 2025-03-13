@@ -14,7 +14,7 @@ const pool = new Pool({
 export const insertMessage = async (
   userId: string,
   message: string,
-  serviceKey: string,
+  serviceKey: "serviceA" | "serviceB",
   randomKey: string
 ) => {
   try {
